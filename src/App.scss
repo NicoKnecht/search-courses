@@ -1,0 +1,114 @@
+tml, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	/*border: 0;*/
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}/*END RESET.CSS*/
+
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;1,800&display=swap');
+
+*{
+	box-sizing: border-box;
+	//border: 1px red solid;
+}
+body{
+  background-color: #5225bd;
+
+  .App {
+	text-align: center;
+	font-family: 'Open Sans', sans-serif;
+	.inputWrapper{
+		display: flex;
+		justify-content: center;
+		.inputCards{
+			display: flex;
+			margin:1rem 0rem 1rem 1rem;
+			padding:0.3rem 0.3rem;
+			min-width: 20%;
+			border-radius: 5px;
+			border: red solid 1px;
+		}
+	}	
+	.cardsContainer{
+		display: flex;	
+		justify-content: center;
+		flex-wrap:wrap ;
+		.courseCard{
+			display:flex;
+			flex-direction: column;
+			min-width: 20rem;
+			max-width: 35%;
+			min-height: 15rem;
+			margin: 2% 2% 2% 2%;
+			text-align: left;
+			border-radius: 10px;
+			overflow: hidden;
+			
+			.imgWrapper{
+				
+				.courseImg{
+					width: 100%;
+					height: 5rem;
+					object-fit: cover;
+					object-position: center ;
+				}
+			}	
+			.titleDescWrapper{
+				background-color:white;
+				padding: 0rem 0.8rem 2rem 0.8rem;
+				flex-grow: 1;//para que llegue al final del padre
+				
+				.courseTitle{
+					font-size: 1.2rem;
+					font-weight: 700;
+					padding:1rem 0rem 1rem 0rem;
+				}
+				.courseDescription{
+					line-height: 1.4rem;
+					
+				}
+			}
+		}
+	}	
+  }
+
+}
+
+
