@@ -6,7 +6,7 @@ function Search(props) {
 
     return (
         <>
-            <input placeholder='tipea el nombre del curso' type="text" onChange={handleChange} />
+            <input className={props.classProp} placeholder='tipea el nombre del curso' type="text" onChange={handleChange} />
         </>
     )
 }

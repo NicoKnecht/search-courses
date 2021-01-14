@@ -58,7 +58,7 @@ function App() {
   return (
     <div className="App">
       <div className="inputWrapper">
-        <Search className="inputCards" handleCallback={handleInputCourses} /> {/*paso funcion a Hije */}
+        <Search classProp="inputCards" handleCallback={handleInputCourses} /> {/*paso funcion a Hije */}
       </div>
 
       <div className="cardsContainer">
